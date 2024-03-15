@@ -8,7 +8,7 @@
 import Foundation
 
 struct Person: Identifiable {
-    var id = UUID()
+    var id: UUID
     
     let name: String
     let surname: String
@@ -44,7 +44,6 @@ struct Person: Identifiable {
                 email: emails[index],
                 phoneNumber: phones[index]
             )
-            
             persons.append(person)
         }
         

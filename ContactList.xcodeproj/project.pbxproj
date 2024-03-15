@@ -16,6 +16,7 @@
 		142511E52BA30D4900EE55E1 /* ContactListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142511E42BA30D4900EE55E1 /* ContactListView.swift */; };
 		142511E72BA30DA500EE55E1 /* DetailedContactListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142511E62BA30DA500EE55E1 /* DetailedContactListView.swift */; };
 		142511E92BA3160200EE55E1 /* ContactDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142511E82BA3160200EE55E1 /* ContactDetailsView.swift */; };
+		142511EB2BA4042400EE55E1 /* ContactDetailsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142511EA2BA4042400EE55E1 /* ContactDetailsRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		142511E42BA30D4900EE55E1 /* ContactListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListView.swift; sourceTree = "<group>"; };
 		142511E62BA30DA500EE55E1 /* DetailedContactListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedContactListView.swift; sourceTree = "<group>"; };
 		142511E82BA3160200EE55E1 /* ContactDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsView.swift; sourceTree = "<group>"; };
+		142511EA2BA4042400EE55E1 /* ContactDetailsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,10 +66,7 @@
 				142511E12BA3082C00EE55E1 /* Services */,
 				142511DE2BA307CD00EE55E1 /* Model */,
 				142511D02BA306B900EE55E1 /* ContactListApp.swift */,
-				142511D22BA306B900EE55E1 /* ContentView.swift */,
-				142511E42BA30D4900EE55E1 /* ContactListView.swift */,
-				142511E82BA3160200EE55E1 /* ContactDetailsView.swift */,
-				142511E62BA30DA500EE55E1 /* DetailedContactListView.swift */,
+				142511EC2BA409B300EE55E1 /* Views */,
 				142511D42BA306BD00EE55E1 /* Assets.xcassets */,
 				142511D62BA306BD00EE55E1 /* Preview Content */,
 			);
@@ -96,6 +95,18 @@
 				142511E22BA3084B00EE55E1 /* DataStore.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		142511EC2BA409B300EE55E1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				142511D22BA306B900EE55E1 /* ContentView.swift */,
+				142511E42BA30D4900EE55E1 /* ContactListView.swift */,
+				142511EA2BA4042400EE55E1 /* ContactDetailsRowView.swift */,
+				142511E82BA3160200EE55E1 /* ContactDetailsView.swift */,
+				142511E62BA30DA500EE55E1 /* DetailedContactListView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +182,7 @@
 				142511E52BA30D4900EE55E1 /* ContactListView.swift in Sources */,
 				142511E02BA307EC00EE55E1 /* Person.swift in Sources */,
 				142511E32BA3084B00EE55E1 /* DataStore.swift in Sources */,
+				142511EB2BA4042400EE55E1 /* ContactDetailsRowView.swift in Sources */,
 				142511E92BA3160200EE55E1 /* ContactDetailsView.swift in Sources */,
 				142511D32BA306B900EE55E1 /* ContentView.swift in Sources */,
 				142511E72BA30DA500EE55E1 /* DetailedContactListView.swift in Sources */,

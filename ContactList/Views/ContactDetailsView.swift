@@ -20,18 +20,8 @@ struct ContactDetailsView: View {
                     .frame(width: 100, height: 100)
                 Spacer()
             }
-
-            HStack {
-                Image(systemName: "phone")
-                    .foregroundStyle(Color(.blue))
-                Text(contact.phoneNumber)
-            }
-
-            HStack {
-                Image(systemName: "tray")
-                    .foregroundStyle(Color(.blue))
-                Text(contact.email)
-            }
+            ContactDetailsRowView(contactData: contact.phoneNumber, image: "phone")
+            ContactDetailsRowView(contactData: contact.email, image: "tray")
         }
         .navigationTitle(contact.fullName)
     }
@@ -39,8 +29,8 @@ struct ContactDetailsView: View {
 
 #Preview {
     if let contact = Person.getContactList().first {
-            ContactDetailsView(contact: contact)
-        } else {
-            Text("No contacts available")
-        }
+        ContactDetailsView(contact: contact)
+    } else {
+        Text("No contacts available")
+    }
 }

@@ -13,17 +13,8 @@ struct DetailedContactListView: View {
     var body: some View {
         List(contacts) { contact in
             Section(contact.fullName) {
-                HStack {
-                    Image(systemName: "phone")
-                        .foregroundStyle(Color(.blue))
-                    Text(contact.phoneNumber)
-                }
-
-                HStack {
-                    Image(systemName: "tray")
-                        .foregroundStyle(Color(.blue))
-                    Text(contact.email)
-                }
+                ContactDetailsRowView(contactData: contact.phoneNumber, image: "phone")
+                ContactDetailsRowView(contactData: contact.email, image: "tray")
             }
         }
         .navigationTitle("Contact List")
