@@ -20,7 +20,6 @@ struct DetailedContactListView: View {
         .navigationTitle("Contact List")
         .listStyle(.plain)
     }
-        
 }
 
 #Preview {

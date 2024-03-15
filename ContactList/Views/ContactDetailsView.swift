@@ -9,9 +9,8 @@ import SwiftUI
 
 struct ContactDetailsView: View {
     let contact: Person
-
+    
     var body: some View {
-        
         List {
             HStack {
                 Spacer()

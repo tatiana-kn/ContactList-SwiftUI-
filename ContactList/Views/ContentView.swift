@@ -11,23 +11,23 @@ struct ContentView: View {
     let contacts: [Person]
     
     var body: some View {
-            TabView {
-                NavigationStack {
-                    ContactListView(contacts: contacts)
-                }
-                .tabItem {
-                    Image(systemName: "person.2.fill")
-                    Text("Contacts")
-                }
-                
-                NavigationStack {
-                    DetailedContactListView(contacts: contacts)
-                }
-                .tabItem {
-                    Image(systemName: "phone.fill")
-                    Text("Numbers")
-                }
+        TabView {
+            NavigationStack {
+                ContactListView(contacts: contacts)
             }
+            .tabItem {
+                Image(systemName: "person.2.fill")
+                Text("Contacts")
+            }
+            
+            NavigationStack {
+                DetailedContactListView(contacts: contacts)
+            }
+            .tabItem {
+                Image(systemName: "phone.fill")
+                Text("Numbers")
+            }
+        }
     }
 }
 
