@@ -11,14 +11,16 @@ struct DetailedContactListView: View {
     let contacts: [Person]
     
     var body: some View {
-        List(contacts) { contact in
-            Section(contact.fullName) {
-                ContactDetailsRowView(contactData: contact.phoneNumber, image: "phone")
-                ContactDetailsRowView(contactData: contact.email, image: "tray")
+        NavigationStack {
+            List(contacts) { contact in
+                Section(contact.fullName) {
+                    ContactDetailsRowView(contactData: contact.phoneNumber, image: "phone")
+                    ContactDetailsRowView(contactData: contact.email, image: "tray")
+                }
             }
+            .navigationTitle("Contact List")
+            .listStyle(.plain)
         }
-        .navigationTitle("Contact List")
-        .listStyle(.plain)
     }
 }
 

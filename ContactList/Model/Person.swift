@@ -8,7 +8,7 @@
 import Foundation
 
 struct Person: Identifiable {
-    var id: UUID
+    var id = UUID()
     
     let name: String
     let surname: String
@@ -38,7 +38,6 @@ struct Person: Identifiable {
         
         for index in 0..<iterationCount {
             let person = Person(
-                id: UUID(),
                 name: names[index],
                 surname: surnames[index],
                 email: emails[index],
